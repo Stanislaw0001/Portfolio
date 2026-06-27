@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+      integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:wdth,wght@75..100,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="container header-container">
+        <div class="header-logo">
+          <a href="#" class="logo">Portfolio</a>
+        </div>
+        <div class="header-nav">
+          <nav class="nav">
+            <ul class="nav-list">
+              <li class="nav-item"><a href="" class="nav-link">About</a></li>
+              <li class="nav-item"><a href="" class="nav-link">Skills</a></li>
+              <li class="nav-item">
+                <a href="" class="nav-link">My Projects</a>
+              </li>
+              <li class="nav-item">
+                <a href="" class="nav-link">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <button class="burger-menu">
+          <svg class="svg-burger">
+            <use xlink:href="./image/sprite.svg#burger-menu"></use>
+          </svg>
+        </button>
+        <button class="burger-close">
+          <svg class="svg-close">
+            <use xlink:href="./image/sprite.svg#close"></use>
+          </svg>
+        </button>
+        <div class="toggle-btn">
+          <label class="switch">
+            <span
+              ><svg class="toggle-svg moon-svg">
+                <use xlink:href="./image/sprite.svg#moon"></use>
+              </svg>
+            </span>
+            <span>
+              <svg class="toggle-svg sun-svg">
+                <use xlink:href="./image/sprite.svg#sun"></use>
+              </svg>
+            </span>
+            <input type="checkbox" />
+            <span class="move"></span>
+          </label>
+        </div>
+      </div>
+
+      <div class="container mobile-menu">
+        <div class="mobile-container">
+          <nav class="nav-menu">
+            <ul class="nav-list-mobile">
+              <li class="nav-item">About</li>
+              <li class="nav-item">Skills</li>
+              <li class="nav-item">My Project</li>
+              <li class="nav-item">Contacts</li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="about">
+        <div class="container about-container">
+          <h1 class="about-title">Hi, I'm Stanislav</h1>
+          <h2 class="about-subtitle">
+            Student<br />
+            Full-stack Developer
+          </h2>
+          <p class="about-text">
+            Frontend developer with practical experience in creating client-side
+            web applications in HTML, CSS and JavaScript
+          </p>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>
