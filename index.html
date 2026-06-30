@@ -44,18 +44,26 @@
             </ul>
           </nav>
         </div>
-        <button class="burger-menu">
+        <button
+          class="burger-menu"
+          aria-label="Open mobile menu"
+          aria-expanded="false"
+        >
           <svg class="svg-burger">
             <use xlink:href="./image/sprite.svg#burger-menu"></use>
           </svg>
         </button>
-        <button class="burger-close">
+        <button
+          class="burger-close"
+          aria-label="Close mobile menu"
+          aria-expanded="false"
+        >
           <svg class="svg-close">
             <use xlink:href="./image/sprite.svg#close"></use>
           </svg>
         </button>
         <div class="toggle-btn">
-          <label class="switch">
+          <label class="switch" for="theme-toggle-desktop">
             <span
               ><svg class="toggle-svg moon-svg">
                 <use xlink:href="./image/sprite.svg#moon"></use>
@@ -66,20 +74,44 @@
                 <use xlink:href="./image/sprite.svg#sun"></use>
               </svg>
             </span>
-            <input type="checkbox" />
+            <input id="theme-toggle-desktop" type="checkbox" />
             <span class="move"></span>
           </label>
         </div>
       </div>
 
-      <div class="container mobile-menu">
+      <div class="container mobile-menu" id="mobile-menu">
         <div class="mobile-container">
+          <div class="mobile-toggle-btn">
+            <label class="switch" for="theme-toggle-mobile">
+              <span
+                ><svg class="toggle-svg moon-svg">
+                  <use xlink:href="./image/sprite.svg#moon"></use>
+                </svg>
+              </span>
+              <span>
+                <svg class="toggle-svg sun-svg">
+                  <use xlink:href="./image/sprite.svg#sun"></use>
+                </svg>
+              </span>
+              <input id="theme-toggle-mobile" type="checkbox" />
+              <span class="move"></span>
+            </label>
+          </div>
           <nav class="nav-menu">
             <ul class="nav-list-mobile">
-              <li class="nav-item">About</li>
-              <li class="nav-item">Skills</li>
-              <li class="nav-item">My Project</li>
-              <li class="nav-item">Contacts</li>
+              <li class="nav-item">
+                <a href="#about" class="mobile-nav-link">About</a>
+              </li>
+              <li class="nav-item">
+                <a href="#skills" class="mobile-nav-link">Skills</a>
+              </li>
+              <li class="nav-item">
+                <a href="#projects" class="mobile-nav-link">My Projects</a>
+              </li>
+              <li class="nav-item">
+                <a href="#contacts" class="mobile-nav-link">Contacts</a>
+              </li>
             </ul>
           </nav>
         </div>
@@ -251,7 +283,7 @@
           </ul>
         </div>
       </section>
-      <section class="contacts">
+      <section class="contacts" id="contacts">
         <div class="container contacts-container">
           <h1 class="contacts-title">Contacts</h1>
           <ul class="contacts-list">
@@ -267,7 +299,10 @@
               </a>
             </li>
             <li class="contacts-item">
-              <a href="" class="contacts-link">
+              <a
+                href="https://www.linkedin.com/in/stanislav-vasylenko/"
+                class="contacts-link"
+              >
                 <svg class="contacts-svg">
                   <use xlink:href="./image/sprite.svg#linkedin"></use>
                 </svg>
@@ -278,7 +313,7 @@
               </a>
             </li>
             <li class="contacts-item">
-              <a href="" class="contacts-link">
+              <a href="https://github.com/Stanislaw0001" class="contacts-link">
                 <svg class="contacts-svg">
                   <use xlink:href="./image/sprite.svg#github"></use>
                 </svg>
